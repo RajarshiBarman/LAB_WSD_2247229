@@ -342,4 +342,61 @@ footer .copyright
         font-weight: 600;
         text-align: center;
     }
+
+#videocat .vidgallery h1
+    {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      color: var(--primary);
+      font-family: 'Dancing Script', cursive;
+    }
     
+#videocat .vidgallery .vidrow{
+        display: flexbox;
+        margin-top: 3rem;
+        margin-left: 3.8rem;
+    }
+    
+#videocat .vidgallery .vidrow video{
+        width: 640px;
+        height: 480px;
+        padding-right: 1rem;
+    }
+
+#audiocat .audgallery h1
+    {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      color: var(--primary);
+      font-family: 'Dancing Script', cursive;
+    }
+    
+#audiocat .audgallery .vidrow{
+        display: flexbox;
+        margin-top: 3rem;
+        margin-left: 3.8rem;
+    }
+#can .can1 h1{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 600;
+      color: var(--primary);
+      font-family: 'Dancing Script', cursive;
+}
+
+#geo{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--primary);
+      font-family: 'Dancing Script', cursive;
+}
