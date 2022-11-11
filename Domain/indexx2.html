@@ -73,13 +73,63 @@
     <section class="catalogue" id="catalogue">
         <div class="gallery">
           <h1>Catalogue</h1>
+          <h1>Images</h1>
           <div class="row1">
               <img src="pic1.jpg" alt="img1">
               <img src="pic2.jpg" alt="img1">
               <img src="pic3.jpg" alt="img1">
               <a href="https://blog.displate.com/gaming-setup-ideas/"><img src="pic4.jpg" alt="img1"></a>
           </div>
+        </div>
       </section>
+    
+      <section class="videocat" id="videocat">
+        <div class="vidgallery">
+          <h1>Videos </h1>
+          <div class="vidrow">
+            <center>
+            <video controls>
+                <source src="Video1.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="Video2.mp4" type="video/mp4">
+            </video>
+        </center>
+         </div>
+        </div>
+      </section>
+    
+      <section class="audiocat" id="audiocat">
+        <div class="audgallery">
+          <h1>Smooth Audio to relax</h1>
+          <div class="audrow">
+            <center>
+            <audio controls>
+                <source src="Audio1.mp3" type="audio/mpeg">
+            </audio><br>
+            <audio controls>
+                <source src="Audio2.mp3" type="audio/mpeg">
+            </audio>
+        </center>
+         </div>
+        </div>
+      </section>
+
+    <section class="can" id="can">
+        <div class="can1">
+            <h1>Canvas</h1>
+            <center><canvas id="myCanvas" width="720" height="480" style="border:1px solid #000000;">
+                <script>
+                    var canvas = document.getElementById("myCanvas");
+                    var ctx = canvas.getContext("2d");
+                    ctx.font = "50px Monotype Corsiva";
+                    ctx.fillStyle = "#F7444E";
+                    ctx.textAlign = "center";
+                    ctx.fillText("Welcome to the World of PC", canvas.width/2, canvas.height/2);
+                </script>
+            </canvas></center>
+        </div>
+    </section>
     
       <section class="offer" id="offer">
         <div class="table">
@@ -148,6 +198,28 @@
                 <center><button class="btn btn-primary">Send Message</button></center>
             </div>
         </form>
+
+        <p id="geo">Click the button below to get your coordinates.</p>
+        <center><button class="btn btn-primary" onclick="getLocation()">Try It</button></center>
+        <p id="demo"></p>
+
+        <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+        }
+
+        function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+
     </section>
 
     <footer>
